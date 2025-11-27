@@ -1,0 +1,67 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+
+body {
+    margin: 0;
+    background: #f2f2f2;
+}
+
+header {
+    background: #ff1b1b;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+#search {
+    margin-top: 10px;
+    padding: 10px;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+#pokemon-container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+}
+header {
+    background: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+}
