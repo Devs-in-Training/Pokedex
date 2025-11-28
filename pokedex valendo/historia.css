@@ -1,6 +1,10 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+
 body {
+    font-size: 30px;
     margin: 20px;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Pokemon Solid', sans-serif;
     line-height: 1.6;
     background-color: #f0f0f0; 
     color: #333;
@@ -10,7 +14,6 @@ body {
     background-position: center;
     background-attachment: fixed;
 }
-
 
 .container {
     text-align: center;
@@ -24,11 +27,11 @@ body {
     padding: 20px;
     color: #fff;
 
-    /* --- EFEITO DE FUNDO EMBAÇADO --- */
+   
     background: rgba(253, 249, 208, 0.25);
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(px);
-    border-radius: 10px;
+    border-radius: 30px;
 
     transition: 0.25s ease;
 
@@ -53,6 +56,8 @@ body {
 
 
 h2 {
+     font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
     background: rgba(253, 249, 208, 0.25);
     backdrop-filter: blur(1px);
     text-align: center;
@@ -65,6 +70,7 @@ img {
 }
 
 p, ul, li {
+     font-family: 'Press Start 2P', cursive;
         background: rgba(206, 206, 205, 0.25);
     backdrop-filter: blur(1px);
     font-size: 0.9rem; 
@@ -89,7 +95,7 @@ p, ul, li {
 .menu-historia a {
   color: #ffffff !important;
     margin: 0 20px;
-    font-size: 10px;
+    font-size: 13px;
 
     text-shadow:
         2px 2px 0 #000,
@@ -102,7 +108,7 @@ p, ul, li {
 
 .menu-historia a:hover {
      color: #ffe600 !important;
-    transform: scale(1.1); /* agora funciona */
+    transform: scale(1.1);
     text-shadow:
         0 0 6px #00c8ff,
         0 0 12px #00c8ff,

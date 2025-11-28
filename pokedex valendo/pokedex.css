@@ -36,7 +36,7 @@ header {
 header a {
     color: #ffffff !important;
     margin: 0 20px;
-    font-size: 16px;
+    font-size: 18pxpx;
 
     text-shadow:
         2px 2px 0 #000,
@@ -103,10 +103,7 @@ header a:hover {
         gap: 8px; 
     flex-wrap: wrap;
 }
-
-    }
-
     header a {
         font-size: 0.8rem;
     }
-
+}
