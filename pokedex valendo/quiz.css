@@ -1,53 +1,53 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Press Start 2P', sans-serif;
+    font-family: 'Press Start 2P', cursive;
     box-sizing: border-box;
 }
 body {
-    background: #f4f4f4;
-}
-.quiz-container {
-    background: #fff;
-    width: 90%;
-    max-width: 600px;
-    margin: 100px auto;
-    padding: 30px;
     
+    background: linear-gradient(135deg, #ffcb05, #3b4cca);
+    min-height: 100vh;
 }
-.quiz-container h1 {
-    font-weight: 25px ;
-    color: #001e4d;
-    font-weight: 600;
-    border-bottom: 1px solid #333;
-    padding-bottom: 30px;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* EVITA BARRA DE ROLAGEM HORIZONTAL em telas pequenas */
 }
-.quiz {
-    font-size: 20px 0;
-    
-}
-.quiz h2 {
-   font-size: 18px;
-   color: #001e4d;
-   font-weight: 600;
-}
-.buttons-perguntas {
-    background-color: #fff;
-    color: #222;
-    font-weight: 500;
-    width: 100%;
-    border: 1px solid #222;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: left;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s;
 
+/* MENU SUPERIOR FIXO SEM OCUPAR ESPAÇO */
+header {
+    position: absolute; /* NÃO deixa criar área branca, flutua sobre o hero */
+    top: 0;
+    left: 0;
+    right: 0; /* Adicionar right: 0 garante que ele cubra toda a largura */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center; /* Mantém o menu centralizado */
+    gap: 30px;
+    z-index: 10;
 }
-.buttons-perguntas:hover:not([disabled]) {
-    background-color: #222;
-    color: #fff;
-    
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Usando RGBA para sombra mais nítida */
+    transition: transform 0.3s;
 }
-   
+
+header a:hover {
+    transform: scale(1.1);
+}
+
+/* Estilização do quiz unica parte do css que fiz ass:lucas curityba */
+.card {
+    border-radius: 15px;
+}
+
+#options button {
+    width: 100%;
+    margin-bottom: 10px;
+}
